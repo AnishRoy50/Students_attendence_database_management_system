@@ -89,9 +89,6 @@ SELECT * FROM ATTENDANCE;
 
 
 
-
-To find Anish's attendance in Shuvo Sir's course on October 15, 2023, you can use a SQL query.
-
 SELECT A.ATTENDENE_STATUS
 FROM ATTENDANCE A
 JOIN STUDENT S ON A.STUDENT_ROLL_NO = S.ROLL_NO
@@ -100,11 +97,6 @@ WHERE S.NAME = 'Anish Roy'
   AND I.INSTRUCTOR_NAME = 'Shuvo Sir'
   AND A.DATE_ATTENDED = TO_DATE('2023-10-15', 'YYYY-MM-DD');
 
-
-To find Anish's attendance on CSE-3209 on 2023-10-15
-
-sql
-Copy code
 SELECT ATTENDENE_STATUS
 FROM ATTENDANCE
 WHERE STUDENT_ROLL_NO = 1909050
